@@ -61,5 +61,17 @@ namespace MSTestProject
 
             Assert.AreEqual(expected, result);
         }
+
+
+        [TestMethod]
+
+        [DataRow("vaishnavi","kuber","vaishnavi kuber")]
+        [DataRow("shri","prabha","shri prabha")]
+        public void NameDisplay(string fName,string lNmae,string expected)
+        {
+            string result= calc.DisplayName(fName,lNmae);
+
+            Assert.AreEqual(expected, result);
+        }
     }
 }
