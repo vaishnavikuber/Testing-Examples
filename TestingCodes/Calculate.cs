@@ -7,7 +7,7 @@ namespace TestingCodes
     public class Calculate
     {
 
-        public double area(int length, int width)
+        public double area(double length, double width)
         {
 
             return length * width;
@@ -55,6 +55,12 @@ namespace TestingCodes
             } while (n > 0);
 
             return rev;
+        }
+
+        public string DisplayName(string fName,string lName)
+        {
+            string name = fName +" "+ lName;
+            return name;
         }
 
 

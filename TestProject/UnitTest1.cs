@@ -6,61 +6,73 @@ namespace TestProject
     public class Tests
     {
 
-        private Calculate calc;
-        [SetUp]
-        public void Setup()
-        {
-            calc = new Calculate();
-        }
+        //private Calculate calc;
+        //[SetUp]
+        //public void Setup()
+        //{
+        //    calc = new Calculate();
+        //}
 
-        [Test]
-        public void FactorialOfNumber()
-        {
-            //arrange
-            int num = 4;
+        //[Test]
+        //public void FactorialOfNumber()
+        //{
+        //    //arrange
+        //    int num = 4;
 
-            //act
-            int result = calc.FactorialNum(num);
+        //    //act
+        //    int result = calc.FactorialNum(num);
 
-            //assert
-            Assert.AreEqual(24, result);
-        }
+        //    //assert
+        //    Assert.AreEqual(24, result);
+        //}
 
 
-        [Test]
-        public void ShouldReturnAreaOfRectangle()
-        {
+        //[Test]
+        //public void ShouldReturnAreaOfRectangle()
+        //{
 
-            //arrange
-            int length = 2;
-            int breadth = 3;
+        //    //arrange
+        //    double length = 2;
+        //    double breadth = 3;
 
-            //act
-            double result = calc.area(length, breadth);
+        //    //act
+        //    double result = calc.area(length, breadth);
 
-            //assert
-            Assert.AreEqual(6, result);
+        //    //assert
+        //    Assert.AreEqual(6, result);
 
-        }
+        //}
 
-        [Test]
-        public void ShouldReturnIntSumIfDigit()
-        {
-            int num = 1234;
+        //[Test]
+        //public void ShouldReturnIntSumIfDigit()
+        //{
+        //    int num = 1234;
 
-            int result= calc.SumOfDigit(num);
+        //    int result= calc.SumOfDigit(num);
 
-            Assert.AreEqual(10, result);
-        }
+        //    Assert.AreEqual(10, result);
+        //}
 
-        [Test]
-        public void ShouldReturnReverseOfNumber()
-        {
-            int num = 35345;
+        //[Test]
+        //public void ShouldReturnReverseOfNumber()
+        //{
+        //    int num = 35345;
 
-            int result= calc.Reverse(num);
+        //    int result= calc.Reverse(num);
 
-            Assert.AreEqual(54353,result);
-        }
+        //    Assert.AreEqual(54353,result);
+        //}
+
+        //[Test]
+        //public void ShouldReturnFullName()
+        //{
+        //    string fName = "Vaishnavi";
+        //    string lName = "Kuber";
+        //    string result = calc.DisplayName(fName,lName);
+
+        //    string expected = "Vaishnavi Kuber";
+
+        //    Assert.AreEqual(expected, result);
+        //}
     }
 }
